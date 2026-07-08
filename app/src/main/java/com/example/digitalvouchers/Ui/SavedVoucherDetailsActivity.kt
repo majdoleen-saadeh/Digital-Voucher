@@ -63,7 +63,6 @@ class SavedVoucherDetailsActivity : AppCompatActivity() {
         val pin = extractPin(reciptParams)
         tvPinCode.text = pin
 
-        // بناء الخطوات برمجياً بالشكل الصحيح المطابق للـ API
         accordionContent.removeAllViews()
 
         howToRedeem.forEach { step ->

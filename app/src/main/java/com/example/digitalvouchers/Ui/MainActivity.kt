@@ -84,17 +84,17 @@ class MainActivity : AppCompatActivity() {
             .register(SVG::class.java, PictureDrawable::class.java, SvgToDrawable())
             .append(InputStream::class.java, SVG::class.java, StreamToSvg())
 
-        // 1. ربط العناصر الأساسية في الـ Activity
+        //main activity elements
         btnBuyNew = findViewById(R.id.btnBuyNew)
         btnSavedVouchers = findViewById(R.id.btnSavedVouchers)
         layoutTabsContainer = findViewById(R.id.Tabs)
         viewPager = findViewById(R.id.viewPager)
 
-        // 2. عمل Inflate للصفحتين (Buy New و Saved)
+        //inflate for both of the screen
         viewBuyNew = layoutInflater.inflate(R.layout.layout_buy_new, null)
         viewSaved = layoutInflater.inflate(R.layout.layout_saved, null)
 
-        // 3. ربط العناصر الداخلية الخاصة بصفحة Buy New
+        //buy new element
         rvVouchers = viewBuyNew.findViewById(R.id.rvVouchers)
         etSearch = viewBuyNew.findViewById(R.id.etSearch)
         searchCountryRow = viewBuyNew.findViewById(R.id.searchCountryRow)
@@ -102,10 +102,10 @@ class MainActivity : AppCompatActivity() {
         tvSelectedCountryName = viewBuyNew.findViewById(R.id.tvSelectedCountryName)
         SelectedCountryFlag = viewBuyNew.findViewById(R.id.SelectedCountryFlag)
 
-        // 4. ربط العناصر الداخلية الخاصة بصفحة Saved
+        //saved element
         rvSavedVouchers = viewSaved.findViewById(R.id.rvSavedVouchers)
 
-        // 5. إعداد الـ ViewPager2 باستخدام Adapter مخصص يعرض الـ Views
+        //  إعداد الـ ViewPager2 باستخدام Adapter مخصص يعرض الـ Views
         viewPager.adapter = object : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
             val views = listOf(viewBuyNew, viewSaved)
 
@@ -336,7 +336,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupSwipeToDelete() {
-        // 1. تفعيل السحب للجهتين (يسار للفتح، ويمين للإغلاق)
+        //swipe left and right
         val swipeCallback = object : ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.LEFT or ItemTouchHelper.RIGHT) {
 
             override fun onMove(
@@ -362,7 +362,7 @@ class MainActivity : AppCompatActivity() {
                     val holder = viewHolder as SavedVoucherAdapter.SavedVoucherViewHolder
                     val position = holder.adapterPosition
 
-                    // 2. حساب نقطة البداية الصحيحة (عشان لما تسحبي وهو مفتوح ما يرجف)
+                    //حل التذبذب اللي صار
                     val isCurrentlyOpen = position == SavedVoucherAdapter.openPosition
                     val baseX = if (isCurrentlyOpen) -holder.maxSwipeDx else 0f
 
@@ -387,7 +387,7 @@ class MainActivity : AppCompatActivity() {
                 val currentX = holder.viewForeground.translationX
                 val shouldOpen = currentX < -holder.maxSwipeDx / 2
 
-                // 3. وقت أنيميشن سريع وسلس (200ms بدل 1500ms)
+
                 holder.viewForeground.animate()
                     .translationX(if (shouldOpen) -holder.maxSwipeDx else 0f)
                     .setDuration(200)
@@ -467,7 +467,6 @@ class MainActivity : AppCompatActivity() {
                             customDialog.window?.setBackgroundDrawableResource(android.R.color.transparent)
 
                             btnAction.setOnClickListener {
-                                // التبديل هنا صار عن طريق الـ ViewPager
                                 viewPager.currentItem = 1
                                 customDialog.dismiss()
                             }

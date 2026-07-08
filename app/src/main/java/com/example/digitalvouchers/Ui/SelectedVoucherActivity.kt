@@ -88,11 +88,9 @@ class SelectedVoucherActivity : AppCompatActivity() {
 
     private fun selectProduct(product: Products) {
         val howToRedeem = product.howToRedeem ?: arrayListOf()
-        accordionContent.removeAllViews() // تفريغ الحاوية القديمة
+        accordionContent.removeAllViews()
 
-        // تم تبسيط الكود ليعرض البيانات تماماً كما تأتي من الـ API
         howToRedeem.forEach { step ->
-            // تحويل المسافات لأسطر حقيقية فقط، دون حذف النجمات أو الترقيم
             val cleanText = step.replace("\r\n", "\n").trim()
 
             if (cleanText.isNotEmpty()) {

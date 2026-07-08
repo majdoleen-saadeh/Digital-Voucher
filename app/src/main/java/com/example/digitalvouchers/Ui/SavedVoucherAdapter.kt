@@ -116,8 +116,6 @@ class SavedVoucherAdapter(
         val date: TextView = itemView.findViewById(R.id.tvSavedDate)
         val amount: TextView = itemView.findViewById(R.id.tvSavedAmount)
         val line: View = itemView.findViewById(R.id.line)
-
-        // تم تعديل مسافة السحب لتصبح 85dp لتناسب الزر المربع (60dp) مع مسافته من الحافة (16dp)
         val maxSwipeDx: Float = 85 * itemView.resources.displayMetrics.density
     }
 }
