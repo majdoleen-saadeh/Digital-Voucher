@@ -49,6 +49,9 @@
         <activity
             android:name="com.example.digitalvouchers.Ui.SavedVoucherDetailsActivity"
             android:exported="false" />
+        <activity
+            android:name="com.example.digitalvouchers.Ui.OTPScreen"
+            android:exported="false" />
 
         <provider
             android:name="androidx.core.content.FileProvider"

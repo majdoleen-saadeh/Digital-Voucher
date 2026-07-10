@@ -1,5 +1,6 @@
 package com.example.digitalvouchers.Ui
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
@@ -8,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.digitalvouchers.R
 import androidx.activity.enableEdgeToEdge
 import android.view.View
+import kotlin.jvm.java
 
 class ReviewVoucherActivity : AppCompatActivity() {
 
@@ -61,6 +63,12 @@ class ReviewVoucherActivity : AppCompatActivity() {
 
 
         btnProceed.setOnClickListener {
+
+                val intent = Intent(this, OTPScreen::class.java).apply {
+                    putExtra("COUNTRY_FLAG_URL", countryFlagUrl)
+                    putExtra("TOTAL_PAY", txtTotalPay.text.toString()) }
+                startActivity(intent)
+
 
         }
     }}

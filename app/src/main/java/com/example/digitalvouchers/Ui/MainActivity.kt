@@ -48,8 +48,15 @@ import java.io.InputStream
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var btnBuyNew: Button
-    private lateinit var btnSavedVouchers: Button
+    companion object {
+        private const val TAG = "MainActivityDebug"
+    }
+    private lateinit var btnBuyNew: View
+    private lateinit var btnSavedVouchers: View
+    private lateinit var ivBuyNewIcon: ImageView
+    private lateinit var ivSavedIcon: ImageView
+    private lateinit var tvBuyNew: TextView
+    private lateinit var tvSaved: TextView
 
     // تعريف الـ ViewPager والـ Views المنفصلة
     private lateinit var viewPager: ViewPager2
@@ -77,6 +84,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Log.d(TAG, "starting the app")
         setupGradientStatusBar()
         setContentView(R.layout.activity_main)
 
@@ -87,9 +95,18 @@ class MainActivity : AppCompatActivity() {
         //main activity elements
         btnBuyNew = findViewById(R.id.btnBuyNew)
         btnSavedVouchers = findViewById(R.id.btnSavedVouchers)
+        ivBuyNewIcon = findViewById(R.id.ivBuyNewIcon)
+        ivSavedIcon = findViewById(R.id.ivSavedIcon)
+        tvBuyNew = findViewById(R.id.tvBuyNew)
+        tvSaved = findViewById(R.id.tvSaved)
         layoutTabsContainer = findViewById(R.id.Tabs)
         viewPager = findViewById(R.id.viewPager)
-
+        try {
+            // ... binding views ...
+            Log.d(TAG, "onCreate: views bound successfully")
+        } catch (e: Exception) {
+            Log.e(TAG, "Error during binding", e)
+        }
         //inflate for both of the screen
         viewBuyNew = layoutInflater.inflate(R.layout.layout_buy_new, null)
         viewSaved = layoutInflater.inflate(R.layout.layout_saved, null)
@@ -113,7 +130,6 @@ class MainActivity : AppCompatActivity() {
 
             override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
                 val view = views[viewType]
-                // التأكد من إزالة الـ View من أي حاوية سابقة قبل إضافته للـ ViewPager
                 (view.parent as? ViewGroup)?.removeView(view)
                 view.layoutParams = ViewGroup.LayoutParams(
                     ViewGroup.LayoutParams.MATCH_PARENT,
@@ -148,8 +164,7 @@ class MainActivity : AppCompatActivity() {
 
         // الحالة الابتدائية للتطبيق
         layoutTabsContainer.isSelected = true
-        btnBuyNew.isSelected = true
-        btnSavedVouchers.isSelected = false
+        setTabSelected(isBuyNewSelected = true)
 
         SavedVoucherAdapter = SavedVoucherAdapter()
         SavedVoucherAdapter.setOnItemClickListener { savedVoucher ->
@@ -164,8 +179,9 @@ class MainActivity : AppCompatActivity() {
         rvCategories.layoutManager =
             LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
 
+        Log.d(TAG, " calling fetchCountriesFromServer")
         fetchCountriesFromServer()
-        setupSwipeToDelete() // يجب استدعاؤه بعد ربط rvSavedVouchers
+        setupSwipeToDelete()
 
         CategoryAdapter = CategoryAdapter(emptyList()) { clickedCategory ->
             if (selectedCategory != clickedCategory.categoryId) {
@@ -176,31 +192,33 @@ class MainActivity : AppCompatActivity() {
         }
         rvCategories.adapter = CategoryAdapter
 
-        // أحداث الضغط على أزرار التبويبات للتنقل عبر الـ ViewPager
+        //view pager transaction between the pages
         btnBuyNew.setOnClickListener {
+            Log.d(TAG, "btnBuyNew clicked")
             viewPager.currentItem = 0
         }
 
         btnSavedVouchers.setOnClickListener {
+            Log.d(TAG, "btnSavedVouchers clicked")
             viewPager.currentItem = 1
         }
 
-        // مستمع لمزامنة الأزرار مع السحب ولإخفاء الكيبورد أثناء السحب
+        // مستمع لمزامنة التابات مع السحب ولإخفاء الكيبورد أثناء السحب
         viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {
                 super.onPageSelected(position)
+                Log.d(TAG, "onPageSelected: position=$position")
                 if (position == 0) {
                     layoutTabsContainer.isSelected = true
-                    btnBuyNew.isSelected = true
-                    btnSavedVouchers.isSelected = false
+                    setTabSelected(isBuyNewSelected = true)
                     fetchProviderCategories(
                         if (::selectedCountry.isInitialized) selectedCountry.countryIso else "all"
                     )
                 } else {
                     layoutTabsContainer.isSelected = false
-                    btnBuyNew.isSelected = false
-                    btnSavedVouchers.isSelected = true
+                    setTabSelected(isBuyNewSelected = false)
                     if (!savedVouchersLoaded) {
+                        Log.d(TAG, " loading saved vouchers for the first time")
                         fetchSavedVouchers()
                         savedVouchersLoaded = true
                     }
@@ -209,7 +227,6 @@ class MainActivity : AppCompatActivity() {
 
             override fun onPageScrollStateChanged(state: Int) {
                 super.onPageScrollStateChanged(state)
-                // إخفاء الكيبورد عند بدء سحب الشاشة
                 if (state == ViewPager2.SCROLL_STATE_DRAGGING) {
                     etSearch.clearFocus()
                     val imm = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
@@ -240,6 +257,19 @@ class MainActivity : AppCompatActivity() {
             }
             override fun afterTextChanged(s: Editable?) {}
         })
+
+        Log.d(TAG, "onCreate: finished")
+    }
+    private fun setTabSelected(isBuyNewSelected: Boolean) {
+        Log.d(TAG, "setTabSelected: isBuyNewSelected=$isBuyNewSelected")
+
+        btnBuyNew.isSelected = isBuyNewSelected
+        tvBuyNew.isSelected = isBuyNewSelected
+        ivBuyNewIcon.visibility = if (isBuyNewSelected) View.VISIBLE else View.GONE
+
+        btnSavedVouchers.isSelected = !isBuyNewSelected
+        tvSaved.isSelected = !isBuyNewSelected
+        ivSavedIcon.visibility = if (!isBuyNewSelected) View.VISIBLE else View.GONE
     }
 
     private fun Filters() {
@@ -253,6 +283,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun fetchProviderCategories(countryCode: String) {
+        Log.d(TAG, "fetchProviderCategories: countryCode=$countryCode")
         val requestBody = providersRequest(
             mobileNumber = networkapi.mobileNumber,
             serviceCode = "INT_VOUCHER",
@@ -262,6 +293,7 @@ class MainActivity : AppCompatActivity() {
         networkapi.apiService.getProvidersCategories(requestBody)
             .enqueue(object : Callback<ProvidersResponse> {
                 override fun onResponse(call: Call<ProvidersResponse>, response: Response<ProvidersResponse>) {
+                    Log.d(TAG, "fetchProviderCategories onResponse: code=${response.code()} successful=${response.isSuccessful}")
                     if (response.isSuccessful && response.body() != null) {
                         val providersData = response.body()!!
                         Log.d("TESTAPI", "providersData: ${providersData}")
@@ -293,6 +325,7 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 override fun onFailure(call: Call<ProvidersResponse>, t: Throwable) {
+                    Log.e(TAG, "fetchProviderCategories onFailure: ${t.javaClass.simpleName} - ${t.message}", t)
                     showError("error ${t.message}")
                 }
             })
@@ -303,6 +336,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun fetchCountriesFromServer() {
+        Log.d(TAG, "fetchCountriesFromServer: sending request, baseUrl=${networkapi.apiService}")
         val requestBody = CountryRequest(
             serviceCode = networkapi.serviceCode,
             mobileNumber = networkapi.mobileNumber
@@ -311,6 +345,7 @@ class MainActivity : AppCompatActivity() {
         networkapi.apiService.getCountries(requestBody)
             .enqueue(object : Callback<CountryResponse> {
                 override fun onResponse(call: Call<CountryResponse>, response: Response<CountryResponse>) {
+                    Log.d(TAG, "fetchCountriesFromServer onResponse: code=${response.code()} successful=${response.isSuccessful}")
                     if (response.isSuccessful && response.body() != null) {
                         val countryData = response.body()!!
                         Log.d("TESTAPI", "countryData: ${countryData}")
@@ -330,13 +365,13 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 override fun onFailure(call: Call<CountryResponse>, t: Throwable) {
+                    Log.e(TAG, "fetchCountriesFromServer onFailure: ${t.javaClass.simpleName} - ${t.message}", t)
                     showError("error: ${t.message}")
                 }
             })
     }
 
     private fun setupSwipeToDelete() {
-        //swipe left and right
         val swipeCallback = object : ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.LEFT or ItemTouchHelper.RIGHT) {
 
             override fun onMove(
@@ -362,7 +397,6 @@ class MainActivity : AppCompatActivity() {
                     val holder = viewHolder as SavedVoucherAdapter.SavedVoucherViewHolder
                     val position = holder.adapterPosition
 
-                    //حل التذبذب اللي صار
                     val isCurrentlyOpen = position == SavedVoucherAdapter.openPosition
                     val baseX = if (isCurrentlyOpen) -holder.maxSwipeDx else 0f
 
@@ -387,13 +421,11 @@ class MainActivity : AppCompatActivity() {
                 val currentX = holder.viewForeground.translationX
                 val shouldOpen = currentX < -holder.maxSwipeDx / 2
 
-
                 holder.viewForeground.animate()
                     .translationX(if (shouldOpen) -holder.maxSwipeDx else 0f)
                     .setDuration(200)
                     .start()
 
-                // 4. تحديث الـ Adapter بالدالة الجديدة عشان ما نقطع الحركة
                 if (shouldOpen) {
                     SavedVoucherAdapter.setOpenPosition(position)
                 } else {
@@ -408,6 +440,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun fetchSavedVouchers() {
+        Log.d(TAG, "fetchSavedVouchers: sending request")
         val requestBody = SavedVoucherRequest(
             mobileNumber = networkapi.mobileNumber,
             serviceCode = networkapi.serviceCode,
@@ -417,6 +450,7 @@ class MainActivity : AppCompatActivity() {
         networkapi.apiService.getSavedVouchers(requestBody)
             .enqueue(object : Callback<SavedVoucherResponse> {
                 override fun onResponse(call: Call<SavedVoucherResponse>, response: Response<SavedVoucherResponse>) {
+                    Log.d(TAG, "fetchSavedVouchers onResponse: code=${response.code()} successful=${response.isSuccessful}")
                     if (response.isSuccessful && response.body() != null) {
                         val savedVouchersData = response.body()!!
                         if (savedVouchersData.status == "SUCCESS") {
@@ -432,6 +466,7 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 override fun onFailure(call: Call<SavedVoucherResponse>, t: Throwable) {
+                    Log.e(TAG, "fetchSavedVouchers onFailure: ${t.javaClass.simpleName} - ${t.message}", t)
                     showError("error: ${t.message}")
                 }
             })

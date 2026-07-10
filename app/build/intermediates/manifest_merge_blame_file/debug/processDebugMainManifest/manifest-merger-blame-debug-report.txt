@@ -27,7 +27,7 @@
 17-->[androidx.core:core:1.19.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\95ee884dc0afae4458f3e6d67767e050\workspace\transformed\core-1.19.0\AndroidManifest.xml:26:22-94
 18
 19    <application
-19-->C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:6:5-47:19
+19-->C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:6:5-50:19
 20        android:allowBackup="true"
 20-->C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:7:9-35
 21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -89,97 +89,103 @@
 50-->C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:34:13-59
 51            android:exported="false" />
 51-->C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:35:13-37
-52
-53        <provider
-53-->INJECTED
-54            android:name="androidx.core.content.FileProvider"
-54-->C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:37:13-62
-55            android:authorities="com.example.digitalvouchers.fileprovider"
-55-->INJECTED
-56            android:exported="false"
-56-->C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:39:13-37
-57            android:grantUriPermissions="true" >
-57-->C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:40:13-47
-58            <meta-data
-58-->C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:41:13-43:58
-59                android:name="android.support.FILE_PROVIDER_PATHS"
-59-->C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:42:17-67
-60                android:resource="@xml/provider_paths" />
-60-->C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:43:17-55
-61        </provider>
-62
-63        <meta-data
-63-->[com.github.bumptech.glide:okhttp3-integration:4.16.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\619f9a22388ad73cfe21600d2f0ba5aa\workspace\transformed\okhttp3-integration-4.16.0\AndroidManifest.xml:10:9-12:43
-64            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
-64-->[com.github.bumptech.glide:okhttp3-integration:4.16.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\619f9a22388ad73cfe21600d2f0ba5aa\workspace\transformed\okhttp3-integration-4.16.0\AndroidManifest.xml:11:13-84
-65            android:value="GlideModule" />
-65-->[com.github.bumptech.glide:okhttp3-integration:4.16.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\619f9a22388ad73cfe21600d2f0ba5aa\workspace\transformed\okhttp3-integration-4.16.0\AndroidManifest.xml:12:13-40
-66
-67        <provider
-67-->[androidx.emoji2:emoji2:1.3.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\921e7e1d15e184cb257ef8c5b2a65392\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
-68            android:name="androidx.startup.InitializationProvider"
-68-->[androidx.emoji2:emoji2:1.3.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\921e7e1d15e184cb257ef8c5b2a65392\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
-69            android:authorities="com.example.digitalvouchers.androidx-startup"
-69-->[androidx.emoji2:emoji2:1.3.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\921e7e1d15e184cb257ef8c5b2a65392\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
-70            android:exported="false" >
-70-->[androidx.emoji2:emoji2:1.3.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\921e7e1d15e184cb257ef8c5b2a65392\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
-71            <meta-data
-71-->[androidx.emoji2:emoji2:1.3.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\921e7e1d15e184cb257ef8c5b2a65392\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
-72                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-72-->[androidx.emoji2:emoji2:1.3.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\921e7e1d15e184cb257ef8c5b2a65392\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
-73                android:value="androidx.startup" />
-73-->[androidx.emoji2:emoji2:1.3.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\921e7e1d15e184cb257ef8c5b2a65392\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+52        <activity
+52-->C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:36:9-38:40
+53            android:name="com.example.digitalvouchers.Ui.OTPScreen"
+53-->C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:37:13-41
+54            android:exported="false" />
+54-->C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:38:13-37
+55
+56        <provider
+56-->INJECTED
+57            android:name="androidx.core.content.FileProvider"
+57-->C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:40:13-62
+58            android:authorities="com.example.digitalvouchers.fileprovider"
+58-->INJECTED
+59            android:exported="false"
+59-->C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:42:13-37
+60            android:grantUriPermissions="true" >
+60-->C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:43:13-47
+61            <meta-data
+61-->C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:44:13-46:58
+62                android:name="android.support.FILE_PROVIDER_PATHS"
+62-->C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:45:17-67
+63                android:resource="@xml/provider_paths" />
+63-->C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:46:17-55
+64        </provider>
+65
+66        <meta-data
+66-->[com.github.bumptech.glide:okhttp3-integration:4.16.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\619f9a22388ad73cfe21600d2f0ba5aa\workspace\transformed\okhttp3-integration-4.16.0\AndroidManifest.xml:10:9-12:43
+67            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
+67-->[com.github.bumptech.glide:okhttp3-integration:4.16.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\619f9a22388ad73cfe21600d2f0ba5aa\workspace\transformed\okhttp3-integration-4.16.0\AndroidManifest.xml:11:13-84
+68            android:value="GlideModule" />
+68-->[com.github.bumptech.glide:okhttp3-integration:4.16.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\619f9a22388ad73cfe21600d2f0ba5aa\workspace\transformed\okhttp3-integration-4.16.0\AndroidManifest.xml:12:13-40
+69
+70        <provider
+70-->[androidx.emoji2:emoji2:1.3.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\921e7e1d15e184cb257ef8c5b2a65392\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+71            android:name="androidx.startup.InitializationProvider"
+71-->[androidx.emoji2:emoji2:1.3.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\921e7e1d15e184cb257ef8c5b2a65392\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+72            android:authorities="com.example.digitalvouchers.androidx-startup"
+72-->[androidx.emoji2:emoji2:1.3.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\921e7e1d15e184cb257ef8c5b2a65392\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+73            android:exported="false" >
+73-->[androidx.emoji2:emoji2:1.3.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\921e7e1d15e184cb257ef8c5b2a65392\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
 74            <meta-data
-74-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\ac58090a11571653c4ea164b3563bd2a\workspace\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
-75                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-75-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\ac58090a11571653c4ea164b3563bd2a\workspace\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+74-->[androidx.emoji2:emoji2:1.3.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\921e7e1d15e184cb257ef8c5b2a65392\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+75                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+75-->[androidx.emoji2:emoji2:1.3.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\921e7e1d15e184cb257ef8c5b2a65392\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
 76                android:value="androidx.startup" />
-76-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\ac58090a11571653c4ea164b3563bd2a\workspace\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+76-->[androidx.emoji2:emoji2:1.3.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\921e7e1d15e184cb257ef8c5b2a65392\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
 77            <meta-data
-77-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\a21fbef9e62107199c8fe467f9dde7d3\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
-78                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-78-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\a21fbef9e62107199c8fe467f9dde7d3\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+77-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\ac58090a11571653c4ea164b3563bd2a\workspace\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+78                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+78-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\ac58090a11571653c4ea164b3563bd2a\workspace\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
 79                android:value="androidx.startup" />
-79-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\a21fbef9e62107199c8fe467f9dde7d3\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
-80        </provider>
-81
-82        <receiver
-82-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\a21fbef9e62107199c8fe467f9dde7d3\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
-83            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-83-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\a21fbef9e62107199c8fe467f9dde7d3\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
-84            android:directBootAware="false"
-84-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\a21fbef9e62107199c8fe467f9dde7d3\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
-85            android:enabled="true"
-85-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\a21fbef9e62107199c8fe467f9dde7d3\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
-86            android:exported="true"
-86-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\a21fbef9e62107199c8fe467f9dde7d3\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
-87            android:permission="android.permission.DUMP" >
-87-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\a21fbef9e62107199c8fe467f9dde7d3\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
-88            <intent-filter>
-88-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\a21fbef9e62107199c8fe467f9dde7d3\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
-89                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-89-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\a21fbef9e62107199c8fe467f9dde7d3\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
-89-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\a21fbef9e62107199c8fe467f9dde7d3\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
-90            </intent-filter>
+79-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\ac58090a11571653c4ea164b3563bd2a\workspace\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+80            <meta-data
+80-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\a21fbef9e62107199c8fe467f9dde7d3\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+81                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+81-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\a21fbef9e62107199c8fe467f9dde7d3\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+82                android:value="androidx.startup" />
+82-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\a21fbef9e62107199c8fe467f9dde7d3\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+83        </provider>
+84
+85        <receiver
+85-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\a21fbef9e62107199c8fe467f9dde7d3\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+86            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+86-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\a21fbef9e62107199c8fe467f9dde7d3\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+87            android:directBootAware="false"
+87-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\a21fbef9e62107199c8fe467f9dde7d3\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+88            android:enabled="true"
+88-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\a21fbef9e62107199c8fe467f9dde7d3\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+89            android:exported="true"
+89-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\a21fbef9e62107199c8fe467f9dde7d3\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+90            android:permission="android.permission.DUMP" >
+90-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\a21fbef9e62107199c8fe467f9dde7d3\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
 91            <intent-filter>
-91-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\a21fbef9e62107199c8fe467f9dde7d3\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
-92                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-92-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\a21fbef9e62107199c8fe467f9dde7d3\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
-92-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\a21fbef9e62107199c8fe467f9dde7d3\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+91-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\a21fbef9e62107199c8fe467f9dde7d3\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+92                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+92-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\a21fbef9e62107199c8fe467f9dde7d3\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+92-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\a21fbef9e62107199c8fe467f9dde7d3\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
 93            </intent-filter>
 94            <intent-filter>
-94-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\a21fbef9e62107199c8fe467f9dde7d3\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
-95                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-95-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\a21fbef9e62107199c8fe467f9dde7d3\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
-95-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\a21fbef9e62107199c8fe467f9dde7d3\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+94-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\a21fbef9e62107199c8fe467f9dde7d3\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+95                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+95-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\a21fbef9e62107199c8fe467f9dde7d3\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+95-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\a21fbef9e62107199c8fe467f9dde7d3\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
 96            </intent-filter>
 97            <intent-filter>
-97-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\a21fbef9e62107199c8fe467f9dde7d3\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
-98                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-98-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\a21fbef9e62107199c8fe467f9dde7d3\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
-98-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\a21fbef9e62107199c8fe467f9dde7d3\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+97-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\a21fbef9e62107199c8fe467f9dde7d3\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+98                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+98-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\a21fbef9e62107199c8fe467f9dde7d3\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+98-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\a21fbef9e62107199c8fe467f9dde7d3\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
 99            </intent-filter>
-100        </receiver>
-101    </application>
-102
-103</manifest>
+100            <intent-filter>
+100-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\a21fbef9e62107199c8fe467f9dde7d3\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+101                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+101-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\a21fbef9e62107199c8fe467f9dde7d3\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+101-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\a21fbef9e62107199c8fe467f9dde7d3\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+102            </intent-filter>
+103        </receiver>
+104    </application>
+105
+106</manifest>

@@ -31,7 +31,7 @@
         android:textSize="16sp"
         android:includeFontPadding="false"
         android:gravity="center"
-        android:fontFamily="@font/font_bd"
+        android:fontFamily="@font/rgfont"
         android:textColor="@drawable/selectedtext" />
 
 </LinearLayout>
