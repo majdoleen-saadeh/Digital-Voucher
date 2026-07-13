@@ -32,7 +32,7 @@
         android:textAlignment="center"
         android:textColor="#333333"
         android:textSize="12sp"
-        android:fontFamily="@font/font_bd"
+        android:fontFamily="@font/bdfont"
         android:maxLines="2"
         android:ellipsize="end" />
 

@@ -29,7 +29,7 @@
         android:textStyle="bold"
         android:textColor="#222222"
         android:layout_marginTop="8dp"
-        android:fontFamily="@font/font_bd"
+        android:fontFamily="@font/bdfont"
         app:layout_constraintTop_toBottomOf="@id/dragHandle"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -41,7 +41,7 @@
         android:background="@drawable/search"
         android:drawableStart="@drawable/search"
         android:drawablePadding="8dp"
-        android:fontFamily="@font/font__rg"
+        android:fontFamily="@font/rgfont"
         android:hint="Search country "
         android:imeOptions="actionSearch"
         android:inputType="textFilter|textNoSuggestions"

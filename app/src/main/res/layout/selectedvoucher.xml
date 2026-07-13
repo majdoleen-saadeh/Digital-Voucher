@@ -36,7 +36,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/font__rg"
+                android:fontFamily="@font/rgfont"
                 android:text="Step 2 of 4"
                 android:textColor="#646464"
                 android:textSize="14sp" />
@@ -47,7 +47,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="20dp"
-                android:fontFamily="@font/font_rg"
+                android:fontFamily="@font/rgfont"
                 android:text="Selected Voucher"
                 android:textColor="#222222"
                 android:textSize="22sp" />
@@ -55,7 +55,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/font__rg"
+                android:fontFamily="@font/rgfont"
                 android:text="Select Voucher Card :"
                 android:textColor="#646464"
                 android:textSize="17sp" />
@@ -91,7 +91,8 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:fontFamily="@font/font__rg"
+                        android:fontFamily="@font/rgfont"
+                        android:textColor="#1D1C1C"
                         android:text="How to Redeem"
                         android:textSize="18sp" />
 

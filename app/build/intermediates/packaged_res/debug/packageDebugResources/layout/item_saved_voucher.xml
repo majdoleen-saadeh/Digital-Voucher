@@ -88,7 +88,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
                     android:paddingStart="20dp"
-                    android:fontFamily="@font/font_rg"
+                    android:fontFamily="@font/rgfont"
                     android:text="** *** ****"
                     android:textColor="#888888"
                     android:textSize="12sp" />
@@ -98,7 +98,7 @@
                 android:id="@+id/tvSavedAmount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/font_rg"
+                android:fontFamily="@font/rgfont"
                 android:text="*** $$$$$"
                 android:textColor="#222222"
                 android:textSize="16sp" />
