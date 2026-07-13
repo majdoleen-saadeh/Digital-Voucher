@@ -31,7 +31,6 @@ class SavedVoucherDetailsActivity : AppCompatActivity() {
         setContentView(R.layout.savedvoucherdetails)
 
         val btnBack = findViewById<ImageView>(R.id.btnBack)
-        val btnClose = findViewById<ImageView>(R.id.btnClose)
         val ivProviderLogo = findViewById<ImageView>(R.id.ivDetailsProviderLogo)
         val tvProviderName = findViewById<TextView>(R.id.tvDetailsProviderName)
         val tvDisplayText = findViewById<TextView>(R.id.tvDetailsDisplayText)
@@ -81,7 +80,6 @@ class SavedVoucherDetailsActivity : AppCompatActivity() {
         arrowIcon.rotation = 180f
 
         btnBack.setOnClickListener { finish() }
-        btnClose.setOnClickListener { finish() }
 
         btnCopyPin.setOnClickListener {
             copyToClipboard(pin)
@@ -99,9 +97,18 @@ class SavedVoucherDetailsActivity : AppCompatActivity() {
     }
 
     private fun extractPin(reciptParams: String): String {
+        if (reciptParams.isBlank() || reciptParams == "null") return ""
+
         return try {
-            JSONObject(reciptParams).optString("pin", "")
+            val json = JSONObject(reciptParams)
+            when {
+                json.has("pin") -> json.getString("pin")
+                json.has("PIN") -> json.getString("PIN")
+                json.has("code") -> json.getString("code")
+                else -> ""
+            }
         } catch (e: Exception) {
+            e.printStackTrace()
             ""
         }
     }
@@ -129,11 +136,8 @@ class SavedVoucherDetailsActivity : AppCompatActivity() {
         return try {
             val childView = scrollView.getChildAt(0) ?: return null
 
-            // 1. تحديد الـ Views اللي بدنا نخفيها مؤقتاً أثناء التصوير
             val headerIcons = findViewById<RelativeLayout>(R.id.headerIcons) // رح نعمل ID لهذا الـ RelativeLayout
 
-            // 2. إخفاء العناصر قبل أخذ اللقطة
-            // ملاحظة: تأكدي إنك حطيتي ID للـ RelativeLayout اللي فيه السهم والاكس
             headerIcons.visibility = View.INVISIBLE
 
             val bitmap = Bitmap.createBitmap(childView.width, childView.height, Bitmap.Config.ARGB_8888)
@@ -142,7 +146,7 @@ class SavedVoucherDetailsActivity : AppCompatActivity() {
             canvas.drawColor(android.graphics.Color.WHITE)
             childView.draw(canvas)
 
-            // 3. إظهار العناصر مرة ثانية فوراً بعد التصوير
+            //يرجع العناصر اللي اخفيتها
             headerIcons.visibility = View.VISIBLE
 
             bitmap

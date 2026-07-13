@@ -26,7 +26,6 @@ drawable ic_share
 drawable newtap1
 drawable newtap2
 drawable receipt
-drawable red_dot
 drawable search
 drawable selectedbuttons
 drawable selectedcategory
@@ -63,7 +62,6 @@ id arrow_icon
 id bottomLayout
 id btnBack
 id btnBuyNew
-id btnClose
 id btnCopyPin
 id btnDeleteSaved
 id btnDialogAction
@@ -71,6 +69,7 @@ id btnResendOtp
 id btnSavedVouchers
 id btnSelectCountry
 id btnShare
+id cardImageContainer
 id countryname
 id cvLogoContainer
 id dialogGif
@@ -94,8 +93,10 @@ id ivSavedProviderLogo
 id ivVoucherLogo
 id layoutCategoryContainer
 id line
+id loadingSpinner
 id main
 id number
+id otpscreen
 id productname
 id rowContent
 id rvCategories
@@ -109,6 +110,7 @@ id textView2
 id tvBuyNew
 id tvDetailsDisplayText
 id tvDetailsProviderName
+id tvErrorMsg
 id tvPinCode
 id tvProductName
 id tvRedeemStepText
@@ -129,6 +131,7 @@ id viewPager
 layout activity_main
 layout countryscreen
 layout dialog_summary
+layout dialog_voucher
 layout item_how_to_redeem
 layout item_product
 layout item_saved_voucher

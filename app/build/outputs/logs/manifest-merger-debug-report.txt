@@ -1,20 +1,20 @@
 -- Merging decision tree log ---
 provider#androidx.core.content.FileProvider
-INJECTED from C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:39:9-47:20
+INJECTED from C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:40:9-48:20
 	android:grantUriPermissions
-		ADDED from C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:43:13-47
+		ADDED from C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:44:13-47
 	android:authorities
 		INJECTED from C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml
-		ADDED from C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:41:13-64
+		ADDED from C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:42:13-64
 	android:exported
-		ADDED from C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:42:13-37
+		ADDED from C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:43:13-37
 	android:name
-		ADDED from C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:40:13-62
+		ADDED from C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:41:13-62
 manifest
-ADDED from C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:2:1-52:12
-INJECTED from C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:2:1-52:12
-INJECTED from C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:2:1-52:12
-INJECTED from C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:2:1-52:12
+ADDED from C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:2:1-53:12
 MERGED from [io.coil-kt:coil:2.6.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\0d801fc77a9e6a96ff82851bf1019f65\workspace\transformed\coil-2.6.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.material:material:1.14.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\b437331db73a9f884baf87288aadee3e\workspace\transformed\material-1.14.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] C:\Users\majdo\.gradle\caches\9.3.1\transforms\9e631956747bc230b6a7e291f080138f\workspace\transformed\constraintlayout-2.2.1\AndroidManifest.xml:2:1-9:12
@@ -23,6 +23,10 @@ MERGED from [androidx.appcompat:appcompat-resources:1.7.1] C:\Users\majdo\.gradl
 MERGED from [androidx.appcompat:appcompat:1.7.1] C:\Users\majdo\.gradle\caches\9.3.1\transforms\51321d5a8a4ed7ced015557761599a09\workspace\transformed\appcompat-1.7.1\AndroidManifest.xml:2:1-7:12
 MERGED from [com.github.bumptech.glide:okhttp3-integration:4.16.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\619f9a22388ad73cfe21600d2f0ba5aa\workspace\transformed\okhttp3-integration-4.16.0\AndroidManifest.xml:2:1-15:12
 MERGED from [com.github.bumptech.glide:glide:4.16.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\720f73b65353f9b532ad29b91220c041\workspace\transformed\glide-4.16.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] C:\Users\majdo\.gradle\caches\9.3.1\transforms\dc8ebfecccda550c7dfa1c84ca42f6f7\workspace\transformed\play-services-auth-api-phone-18.0.2\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\majdo\.gradle\caches\9.3.1\transforms\b1e08274b9fd93ea13a53fc05a3958d1\workspace\transformed\play-services-base-18.0.1\AndroidManifest.xml:16:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\majdo\.gradle\caches\9.3.1\transforms\f0cbe0f23756ff59bca7d715fdc3f251\workspace\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement:18.0.2] C:\Users\majdo\.gradle\caches\9.3.1\transforms\5a4afd0730c5ce976131cf131947361e\workspace\transformed\play-services-basement-18.0.2\AndroidManifest.xml:16:1-26:12
 MERGED from [androidx.recyclerview:recyclerview:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\b9c1d1b7d4538e238b9007d5647e17b5\workspace\transformed\recyclerview-1.4.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] C:\Users\majdo\.gradle\caches\9.3.1\transforms\1b8626be63ce01ab1ed7bdfe4d0dae8f\workspace\transformed\viewpager2-1.1.0-beta02\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.fragment:fragment:1.5.4] C:\Users\majdo\.gradle\caches\9.3.1\transforms\05d3548bea2caa22514532ef0e1ce974\workspace\transformed\fragment-1.5.4\AndroidManifest.xml:17:1-24:12
@@ -80,14 +84,20 @@ ADDED from C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:4:
 	android:name
 		ADDED from C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:4:22-64
 application
-ADDED from C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:6:5-50:19
-INJECTED from C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:6:5-50:19
+ADDED from C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:6:5-51:19
+INJECTED from C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:6:5-51:19
 MERGED from [com.google.android.material:material:1.14.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\b437331db73a9f884baf87288aadee3e\workspace\transformed\material-1.14.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.14.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\b437331db73a9f884baf87288aadee3e\workspace\transformed\material-1.14.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] C:\Users\majdo\.gradle\caches\9.3.1\transforms\9e631956747bc230b6a7e291f080138f\workspace\transformed\constraintlayout-2.2.1\AndroidManifest.xml:7:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] C:\Users\majdo\.gradle\caches\9.3.1\transforms\9e631956747bc230b6a7e291f080138f\workspace\transformed\constraintlayout-2.2.1\AndroidManifest.xml:7:5-20
 MERGED from [com.github.bumptech.glide:okhttp3-integration:4.16.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\619f9a22388ad73cfe21600d2f0ba5aa\workspace\transformed\okhttp3-integration-4.16.0\AndroidManifest.xml:9:5-13:19
 MERGED from [com.github.bumptech.glide:okhttp3-integration:4.16.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\619f9a22388ad73cfe21600d2f0ba5aa\workspace\transformed\okhttp3-integration-4.16.0\AndroidManifest.xml:9:5-13:19
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\majdo\.gradle\caches\9.3.1\transforms\b1e08274b9fd93ea13a53fc05a3958d1\workspace\transformed\play-services-base-18.0.1\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\majdo\.gradle\caches\9.3.1\transforms\b1e08274b9fd93ea13a53fc05a3958d1\workspace\transformed\play-services-base-18.0.1\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\majdo\.gradle\caches\9.3.1\transforms\f0cbe0f23756ff59bca7d715fdc3f251\workspace\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\majdo\.gradle\caches\9.3.1\transforms\f0cbe0f23756ff59bca7d715fdc3f251\workspace\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:18.0.2] C:\Users\majdo\.gradle\caches\9.3.1\transforms\5a4afd0730c5ce976131cf131947361e\workspace\transformed\play-services-basement-18.0.2\AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:18.0.2] C:\Users\majdo\.gradle\caches\9.3.1\transforms\5a4afd0730c5ce976131cf131947361e\workspace\transformed\play-services-basement-18.0.2\AndroidManifest.xml:20:5-24:19
 MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\921e7e1d15e184cb257ef8c5b2a65392\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\921e7e1d15e184cb257ef8c5b2a65392\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.core:core:1.19.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\95ee884dc0afae4458f3e6d67767e050\workspace\transformed\core-1.19.0\AndroidManifest.xml:28:5-89
@@ -159,17 +169,19 @@ ADDED from C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:33
 	android:name
 		ADDED from C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:34:13-59
 activity#com.example.digitalvouchers.Ui.OTPScreen
-ADDED from C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:36:9-38:40
+ADDED from C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:36:9-39:39
+	android:noHistory
+		ADDED from C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:39:13-37
 	android:exported
 		ADDED from C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:38:13-37
 	android:name
 		ADDED from C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:37:13-41
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:44:13-46:58
+ADDED from C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:45:13-47:58
 	android:resource
-		ADDED from C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:46:17-55
+		ADDED from C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:47:17-55
 	android:name
-		ADDED from C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:45:17-67
+		ADDED from C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml:46:17-67
 uses-sdk
 INJECTED from C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\DigitalVoucher\DigitalVouchers\app\src\main\AndroidManifest.xml
@@ -190,6 +202,14 @@ MERGED from [com.github.bumptech.glide:okhttp3-integration:4.16.0] C:\Users\majd
 MERGED from [com.github.bumptech.glide:okhttp3-integration:4.16.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\619f9a22388ad73cfe21600d2f0ba5aa\workspace\transformed\okhttp3-integration-4.16.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.github.bumptech.glide:glide:4.16.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\720f73b65353f9b532ad29b91220c041\workspace\transformed\glide-4.16.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.github.bumptech.glide:glide:4.16.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\720f73b65353f9b532ad29b91220c041\workspace\transformed\glide-4.16.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] C:\Users\majdo\.gradle\caches\9.3.1\transforms\dc8ebfecccda550c7dfa1c84ca42f6f7\workspace\transformed\play-services-auth-api-phone-18.0.2\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] C:\Users\majdo\.gradle\caches\9.3.1\transforms\dc8ebfecccda550c7dfa1c84ca42f6f7\workspace\transformed\play-services-auth-api-phone-18.0.2\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\majdo\.gradle\caches\9.3.1\transforms\b1e08274b9fd93ea13a53fc05a3958d1\workspace\transformed\play-services-base-18.0.1\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\majdo\.gradle\caches\9.3.1\transforms\b1e08274b9fd93ea13a53fc05a3958d1\workspace\transformed\play-services-base-18.0.1\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\majdo\.gradle\caches\9.3.1\transforms\f0cbe0f23756ff59bca7d715fdc3f251\workspace\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\majdo\.gradle\caches\9.3.1\transforms\f0cbe0f23756ff59bca7d715fdc3f251\workspace\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.0.2] C:\Users\majdo\.gradle\caches\9.3.1\transforms\5a4afd0730c5ce976131cf131947361e\workspace\transformed\play-services-basement-18.0.2\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.0.2] C:\Users\majdo\.gradle\caches\9.3.1\transforms\5a4afd0730c5ce976131cf131947361e\workspace\transformed\play-services-basement-18.0.2\AndroidManifest.xml:18:5-43
 MERGED from [androidx.recyclerview:recyclerview:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\b9c1d1b7d4538e238b9007d5647e17b5\workspace\transformed\recyclerview-1.4.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.recyclerview:recyclerview:1.4.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\b9c1d1b7d4538e238b9007d5647e17b5\workspace\transformed\recyclerview-1.4.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] C:\Users\majdo\.gradle\caches\9.3.1\transforms\1b8626be63ce01ab1ed7bdfe4d0dae8f\workspace\transformed\viewpager2-1.1.0-beta02\AndroidManifest.xml:5:5-44
@@ -284,6 +304,20 @@ ADDED from [com.github.bumptech.glide:okhttp3-integration:4.16.0] C:\Users\majdo
 		ADDED from [com.github.bumptech.glide:okhttp3-integration:4.16.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\619f9a22388ad73cfe21600d2f0ba5aa\workspace\transformed\okhttp3-integration-4.16.0\AndroidManifest.xml:12:13-40
 	android:name
 		ADDED from [com.github.bumptech.glide:okhttp3-integration:4.16.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\619f9a22388ad73cfe21600d2f0ba5aa\workspace\transformed\okhttp3-integration-4.16.0\AndroidManifest.xml:11:13-84
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\majdo\.gradle\caches\9.3.1\transforms\b1e08274b9fd93ea13a53fc05a3958d1\workspace\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\majdo\.gradle\caches\9.3.1\transforms\b1e08274b9fd93ea13a53fc05a3958d1\workspace\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\majdo\.gradle\caches\9.3.1\transforms\b1e08274b9fd93ea13a53fc05a3958d1\workspace\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\majdo\.gradle\caches\9.3.1\transforms\b1e08274b9fd93ea13a53fc05a3958d1\workspace\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:18.0.2] C:\Users\majdo\.gradle\caches\9.3.1\transforms\5a4afd0730c5ce976131cf131947361e\workspace\transformed\play-services-basement-18.0.2\AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:18.0.2] C:\Users\majdo\.gradle\caches\9.3.1\transforms\5a4afd0730c5ce976131cf131947361e\workspace\transformed\play-services-basement-18.0.2\AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:18.0.2] C:\Users\majdo\.gradle\caches\9.3.1\transforms\5a4afd0730c5ce976131cf131947361e\workspace\transformed\play-services-basement-18.0.2\AndroidManifest.xml:22:13-58
 provider#androidx.startup.InitializationProvider
 ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\921e7e1d15e184cb257ef8c5b2a65392\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
 MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\majdo\.gradle\caches\9.3.1\transforms\ac58090a11571653c4ea164b3563bd2a\workspace\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:24:9-32:20

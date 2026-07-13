@@ -36,14 +36,6 @@
                     android:contentDescription="Back"
                     android:src="@drawable/arrow_back" />
 
-                <ImageView
-                    android:id="@+id/btnClose"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerInParent="true"
-                    android:contentDescription="Close"
-                    android:src="@drawable/ic_close" />
             </RelativeLayout>
 
             <ImageView
@@ -92,8 +84,9 @@
                     android:id="@+id/tvPinCode"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginTop="10dp"
                     android:fontFamily="@font/rgfont"
                     android:text="000000000000"
                     android:textColor="#CC0000"

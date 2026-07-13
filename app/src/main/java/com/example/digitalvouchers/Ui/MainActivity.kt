@@ -142,6 +142,29 @@ class MainActivity : AppCompatActivity() {
             override fun getItemCount() = views.size
             override fun getItemViewType(position: Int) = position
         }
+        rvCategories.layoutManager =
+            LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+
+        //ما بدي يصير تضارب بالسحب عند الكاتيجوري
+        rvCategories.addOnItemTouchListener(object : RecyclerView.OnItemTouchListener {
+            override fun onInterceptTouchEvent(rv: RecyclerView, e: android.view.MotionEvent): Boolean {
+                when (e.action) {
+                    android.view.MotionEvent.ACTION_DOWN -> {
+                        // وقفت الفيو بيجر هون
+                        rv.parent.requestDisallowInterceptTouchEvent(true)
+                    }
+                    android.view.MotionEvent.ACTION_UP, android.view.MotionEvent.ACTION_CANCEL -> {
+                        //بنرجع شغل الفيو بيجر لما اشيل اصبعي عن الكاتيجوري
+                        rv.parent.requestDisallowInterceptTouchEvent(false)
+                    }
+                }
+
+                return false
+            }
+
+            override fun onTouchEvent(rv: RecyclerView, e: android.view.MotionEvent) {}
+            override fun onRequestDisallowInterceptTouchEvent(disallowIntercept: Boolean) {}
+        })
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -488,9 +511,18 @@ class MainActivity : AppCompatActivity() {
                         val deleteResult = response.body()!!
                         if (deleteResult.status == "SUCCESS") {
                             SavedVoucherAdapter.removeItem(position)
+
+                            // إعداد الديالوج
                             val dialogView = layoutInflater.inflate(R.layout.dialog_summary, null)
                             val tvMessage = dialogView.findViewById<TextView>(R.id.dialogMessage)
                             val btnAction = dialogView.findViewById<Button>(R.id.btnDialogAction)
+                            val dialogGif = dialogView.findViewById<ImageView>(R.id.dialogGif)
+
+
+                            Glide.with(this@MainActivity)
+                                .asGif()
+                                .load(R.raw.keybs_summary)
+                                .into(dialogGif)
 
                             tvMessage.text = deleteResult.message
 
@@ -501,8 +533,7 @@ class MainActivity : AppCompatActivity() {
 
                             customDialog.window?.setBackgroundDrawableResource(android.R.color.transparent)
 
-                            btnAction.setOnClickListener {
-                                viewPager.currentItem = 1
+                            btnAction.setOnClickListener {// اضل بنفس الصفحة
                                 customDialog.dismiss()
                             }
 
@@ -511,9 +542,7 @@ class MainActivity : AppCompatActivity() {
                             showError("error: ${deleteResult.status}")
                         }
                     } else {
-                        val errorBody = response.errorBody()?.string()
-                        Log.d("DELETEBILL", "code=${response.code()} body=$errorBody")
-                        showError("error: ${response.code()} - $errorBody")
+                        showError("error: ${response.code()}")
                     }
                 }
 
@@ -522,7 +551,6 @@ class MainActivity : AppCompatActivity() {
                 }
             })
     }
-
     private fun setupGradientStatusBar() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             val window = window

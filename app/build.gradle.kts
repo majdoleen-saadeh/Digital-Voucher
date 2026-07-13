@@ -42,7 +42,7 @@ dependencies {
     implementation("io.coil-kt:coil:2.6.0")
     implementation("com.github.bumptech.glide:okhttp3-integration:4.16.0")
     implementation("com.caverock:androidsvg-aar:1.4")
-
+    implementation("com.google.android.gms:play-services-auth-api-phone:18.0.2")
 
 
     implementation(libs.androidx.core.ktx)

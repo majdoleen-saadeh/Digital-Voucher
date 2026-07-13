@@ -25,7 +25,6 @@ int drawable ic_share 0x0
 int drawable newtap1 0x0
 int drawable newtap2 0x0
 int drawable receipt 0x0
-int drawable red_dot 0x0
 int drawable search 0x0
 int drawable selectedbuttons 0x0
 int drawable selectedcategory 0x0
@@ -62,7 +61,6 @@ int id arrow_icon 0x0
 int id bottomLayout 0x0
 int id btnBack 0x0
 int id btnBuyNew 0x0
-int id btnClose 0x0
 int id btnCopyPin 0x0
 int id btnDeleteSaved 0x0
 int id btnDialogAction 0x0
@@ -70,6 +68,7 @@ int id btnResendOtp 0x0
 int id btnSavedVouchers 0x0
 int id btnSelectCountry 0x0
 int id btnShare 0x0
+int id cardImageContainer 0x0
 int id countryname 0x0
 int id cvLogoContainer 0x0
 int id dialogGif 0x0
@@ -93,8 +92,10 @@ int id ivSavedProviderLogo 0x0
 int id ivVoucherLogo 0x0
 int id layoutCategoryContainer 0x0
 int id line 0x0
+int id loadingSpinner 0x0
 int id main 0x0
 int id number 0x0
+int id otpscreen 0x0
 int id productname 0x0
 int id rowContent 0x0
 int id rvCategories 0x0
@@ -108,6 +109,7 @@ int id textView2 0x0
 int id tvBuyNew 0x0
 int id tvDetailsDisplayText 0x0
 int id tvDetailsProviderName 0x0
+int id tvErrorMsg 0x0
 int id tvPinCode 0x0
 int id tvProductName 0x0
 int id tvRedeemStepText 0x0
@@ -128,6 +130,7 @@ int id viewPager 0x0
 int layout activity_main 0x0
 int layout countryscreen 0x0
 int layout dialog_summary 0x0
+int layout dialog_voucher 0x0
 int layout item_how_to_redeem 0x0
 int layout item_product 0x0
 int layout item_saved_voucher 0x0

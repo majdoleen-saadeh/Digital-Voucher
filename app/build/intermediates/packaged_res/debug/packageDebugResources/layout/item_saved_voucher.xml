@@ -4,15 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <!-- الخلفية اللي بتظهر لما نسحب (زر الحذف) -->
-    <LinearLayout
+     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
         android:gravity="end|center_vertical"
-        android:background="#FFFFFF"> <!-- خلينا الخلفية بيضاء عشان المربع يبرز -->
-
-        <!-- الزر المربع -->
+        android:background="#FFFFFF">
         <LinearLayout
             android:id="@+id/btnDeleteSaved"
             android:layout_width="60dp"
@@ -27,16 +24,17 @@
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/delete"
-                app:tint="#666666" /> <!-- تغميق الأيقونة شوي لتطابق الصورة -->
+                app:tint="#666666" />
         </LinearLayout>
     </LinearLayout>
 
-    <!-- الواجهة الأمامية للفاوتشر (بدون تعديل على محتواها) -->
+    <!-- Foreground Content -->
     <LinearLayout
         android:id="@+id/viewForeground"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:layout_marginTop="10dp"
         android:background="@android:color/white">
 
         <LinearLayout
@@ -53,12 +51,13 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cvLogoContainer"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
                 app:cardCornerRadius="12dp"
-                app:cardElevation="0dp">
+                app:cardElevation="1dp"
+                app:cardBackgroundColor="#FFFFFF">
 
-                <ImageView
+                 <ImageView
                     android:id="@+id/ivSavedProviderLogo"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -77,7 +76,8 @@
                     android:id="@+id/tvSavedDisplayText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/font_rg"
+                    android:fontFamily="@font/rgfont"
+                    android:paddingStart="20dp"
                     android:text="$$$$$"
                     android:textColor="#222222"
                     android:textSize="16sp" />
@@ -87,6 +87,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
+                    android:paddingStart="20dp"
                     android:fontFamily="@font/font_rg"
                     android:text="** *** ****"
                     android:textColor="#888888"
@@ -109,6 +110,7 @@
             android:layout_height="2dp"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/dashed_line"
             android:layerType="software" />
     </LinearLayout>

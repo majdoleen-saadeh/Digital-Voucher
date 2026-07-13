@@ -111,6 +111,7 @@ class SelectedVoucherActivity : AppCompatActivity() {
             putExtra("TOTAL_PAY", "${product.sendCurrencyIso} ${product.sendValue}")
             putExtra("COUNTRY_ISO", product.countryIso)
             putExtra("COUNTRY_FLAG_URL", countryFlagUrl)
+            putExtra("PRODUCT_SKU", product.skuCode)
         }
         startActivity(intent)
     }
