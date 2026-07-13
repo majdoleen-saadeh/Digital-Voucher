@@ -87,6 +87,9 @@ class ReviewVoucherActivity : AppCompatActivity() {
                             putExtra("COUNTRY_FLAG_URL", countryFlagUrl)
                             putExtra("TOTAL_PAY", txtTotalPay.text.toString())
                             putExtra("TRANSACTION_ID", transactionId ?: -1)// الترانزاكشن اللي اجى من الشاشة
+                            putExtra("PRODUCT_SKU", productSku)
+                            putExtra("SERVICE_CODE", networkapi.serviceCode)
+                            putExtra("IPAY_CUSTOMER_ID", networkapi.iPayCustomerID)
                         }
                         startActivity(intent)
                     } else {

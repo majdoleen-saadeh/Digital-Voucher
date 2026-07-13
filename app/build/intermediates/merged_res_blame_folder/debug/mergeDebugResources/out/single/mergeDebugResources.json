@@ -96,10 +96,6 @@
         "source": "C:\\Users\\majdo\\.gradle\\daemon\\9.3.1\\com.example.digitalvouchers.app-main-5:\\drawable\\footer.png"
     },
     {
-        "merged": "com.example.digitalvouchers.app-debug-3:/layout_savedvoucherdetails.xml.flat",
-        "source": "com.example.digitalvouchers.app-main-5:/layout/savedvoucherdetails.xml"
-    },
-    {
         "merged": "C:\\Users\\majdo\\.gradle\\daemon\\9.3.1\\com.example.digitalvouchers.app-debug-3:\\raw_keybs_spinner.gif.flat",
         "source": "C:\\Users\\majdo\\.gradle\\daemon\\9.3.1\\com.example.digitalvouchers.app-main-5:\\raw\\keybs_spinner.gif"
     },
@@ -326,6 +322,10 @@
     {
         "merged": "C:\\Users\\majdo\\.gradle\\daemon\\9.3.1\\com.example.digitalvouchers.app-debug-3:\\font_font_rgbd.ttf.flat",
         "source": "C:\\Users\\majdo\\.gradle\\daemon\\9.3.1\\com.example.digitalvouchers.app-main-5:\\font\\font_rgbd.ttf"
+    },
+    {
+        "merged": "com.example.digitalvouchers.app-debug-3:/layout_selectedvoucher.xml.flat",
+        "source": "com.example.digitalvouchers.app-main-5:/layout/selectedvoucher.xml"
     },
     {
         "merged": "C:\\Users\\majdo\\.gradle\\daemon\\9.3.1\\com.example.digitalvouchers.app-debug-3:\\mipmap-hdpi_ic_launcher.webp.flat",
