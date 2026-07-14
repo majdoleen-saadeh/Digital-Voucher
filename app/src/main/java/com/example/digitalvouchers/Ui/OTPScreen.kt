@@ -51,7 +51,7 @@ import com.example.digitalvouchers.Data.RequestIPayOtpResponse
 
 class OTPScreen : AppCompatActivity() {
 
-    // متغيرات الشاشة
+    // متغيرات الشاشة asdasdas
     private lateinit var loadingSpinner: ImageView
     private var countDownTimer: CountDownTimer? = null
     private lateinit var otpFields: Array<EditText>
