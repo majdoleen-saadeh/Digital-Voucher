@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 com.example.digitalvouchers:style/Widget.MaterialComponents.MaterialCalendar.Year.Today = 0x7f1205b8
 com.example.digitalvouchers:style/SizeOverlay.Material3Expressive.Button.IconButton.Small.Narrow = 0x7f1201e1
 com.example.digitalvouchers:styleable/AppCompatTextView = 0x7f130011
@@ -8,6 +9,18 @@ com.example.digitalvouchers:id/text_input_start_icon = 0x7f090229
 com.example.digitalvouchers:id/ivVoucherLogo = 0x7f090127
 com.example.digitalvouchers:styleable/LoadingIndicator = 0x7f130055
 com.example.digitalvouchers:style/Widget.Material3Expressive.Button.IconButton.Outlined = 0x7f12053a
+=======
+com.example.digitalvouchers:style/Widget.Design.NavigationView = 0x7f120443
+com.example.digitalvouchers:style/Widget.MaterialComponents.MaterialCalendar.Year.Today = 0x7f1205b8
+com.example.digitalvouchers:style/Base.V21.Theme.AppCompat = 0x7f1200a9
+com.example.digitalvouchers:style/SizeOverlay.Material3Expressive.Button.IconButton.Small.Narrow = 0x7f1201e1
+com.example.digitalvouchers:styleable/AppCompatTextView = 0x7f130011
+com.example.digitalvouchers:styleable/LoadingIndicator = 0x7f130055
+com.example.digitalvouchers:id/ivVoucherLogo = 0x7f090127
+com.example.digitalvouchers:style/Widget.Material3Expressive.Button.IconButton.Outlined = 0x7f12053a
+com.example.digitalvouchers:styleable/MaterialSpring = 0x7f130065
+com.example.digitalvouchers:id/text_input_start_icon = 0x7f090229
+>>>>>>> ce1db1c85c1a6c4f8c49a70d6be59cc36e7b13a0
 com.example.digitalvouchers:style/Base.Widget.AppCompat.Button = 0x7f1200d4
 com.example.digitalvouchers:string/mtrl_picker_out_of_range = 0x7f1100a2
 com.example.digitalvouchers:style/Widget.MaterialComponents.TimePicker.ImageButton.ShapeAppearance = 0x7f1205e4
@@ -64,8 +77,13 @@ com.example.digitalvouchers:macro/m3_comp_switch_selected_track_color = 0x7f0d01
 com.example.digitalvouchers:style/TextAppearance.Widget.AppCompat.Toolbar.Title = 0x7f120291
 com.example.digitalvouchers:style/Theme.MaterialComponents.Light.Dialog.Alert.FocusRings = 0x7f120341
 com.example.digitalvouchers:style/ThemeOverlay.MaterialComponents.Toolbar.Primary = 0x7f1203f1
+<<<<<<< HEAD
 com.example.digitalvouchers:macro/m3_comp_outlined_text_field_hover_supporting_text_color = 0x7f0d0161
 com.example.digitalvouchers:style/Widget.Material3.Checkbox.ListItem = 0x7f12047d
+=======
+com.example.digitalvouchers:style/Widget.Material3.Checkbox.ListItem = 0x7f12047d
+com.example.digitalvouchers:macro/m3_comp_outlined_text_field_hover_supporting_text_color = 0x7f0d0161
+>>>>>>> ce1db1c85c1a6c4f8c49a70d6be59cc36e7b13a0
 com.example.digitalvouchers:style/Widget.Material3.Slider = 0x7f12050b
 com.example.digitalvouchers:style/Widget.Material3.MaterialCalendar.Day.Today = 0x7f1204d5
 com.example.digitalvouchers:style/Widget.AppCompat.Light.ActionBar.TabBar = 0x7f120410
@@ -398,7 +416,10 @@ com.example.digitalvouchers:macro/m3_comp_switch_unselected_hover_handle_color =
 com.example.digitalvouchers:color/material_dynamic_primary50 = 0x7f050307
 com.example.digitalvouchers:integer/material_motion_duration_medium_1 = 0x7f0a002e
 com.example.digitalvouchers:style/Theme.MaterialComponents.BottomSheetDialog = 0x7f120310
+<<<<<<< HEAD
 com.example.digitalvouchers:mipmap/ic_launcher_foreground = 0x7f0e0002
+=======
+>>>>>>> ce1db1c85c1a6c4f8c49a70d6be59cc36e7b13a0
 com.example.digitalvouchers:macro/m3_comp_toolbar_vibrant_selected_hovered_icon_color = 0x7f0d023b
 com.example.digitalvouchers:dimen/mtrl_btn_snackbar_margin_horizontal = 0x7f0603a9
 com.example.digitalvouchers:style/ThemeOverlay.Material3.Toolbar = 0x7f1203a9
@@ -433,10 +454,13 @@ com.example.digitalvouchers:id/menu = 0x7f090153
 com.example.digitalvouchers:style/Widget.MaterialComponents.MaterialCalendar.HeaderSelection.Fullscreen = 0x7f1205b0
 com.example.digitalvouchers:styleable/DrawerLayout = 0x7f130031
 com.example.digitalvouchers:style/Theme.Material3Expressive.DynamicColors.Light.NoActionBar = 0x7f120302
+<<<<<<< HEAD
 com.example.digitalvouchers:style/Base.Theme.MaterialComponents.Bridge = 0x7f12006e
 com.example.digitalvouchers:style/Widget.MaterialComponents.MaterialCalendar.Day.Today = 0x7f1205a6
 com.example.digitalvouchers:attr/overflowLinearLayoutStyle = 0x7f0303ec
 com.example.digitalvouchers:dimen/design_snackbar_extra_spacing_horizontal = 0x7f060084
+=======
+>>>>>>> ce1db1c85c1a6c4f8c49a70d6be59cc36e7b13a0
 com.example.digitalvouchers:style/Widget.Material3.CircularProgressIndicator.Legacy = 0x7f12048c
 com.example.digitalvouchers:drawable/material_ic_menu_arrow_down_black_24dp = 0x7f0700f4
 com.example.digitalvouchers:style/Widget.Material3.SideSheet = 0x7f120507
@@ -767,6 +791,13 @@ com.example.digitalvouchers:dimen/m3_back_progress_main_container_max_translatio
 com.example.digitalvouchers:styleable/BottomSheetBehavior_Layout = 0x7f130017
 com.example.digitalvouchers:style/ThemeOverlay.Material.FocusRings = 0x7f12035d
 com.example.digitalvouchers:style/Widget.Material3.TextInputLayout.OutlinedBox = 0x7f120522
+<<<<<<< HEAD
+=======
+com.example.digitalvouchers:style/Base.Theme.MaterialComponents.Bridge = 0x7f12006e
+com.example.digitalvouchers:style/Widget.MaterialComponents.MaterialCalendar.Day.Today = 0x7f1205a6
+com.example.digitalvouchers:attr/overflowLinearLayoutStyle = 0x7f0303ec
+com.example.digitalvouchers:dimen/design_snackbar_extra_spacing_horizontal = 0x7f060084
+>>>>>>> ce1db1c85c1a6c4f8c49a70d6be59cc36e7b13a0
 com.example.digitalvouchers:layout/abc_activity_chooser_view = 0x7f0c0006
 com.example.digitalvouchers:id/transition_pause_alpha = 0x7f09023f
 com.example.digitalvouchers:color/m3_sys_color_dynamic_on_secondary_fixed = 0x7f05027b
@@ -776,15 +807,23 @@ com.example.digitalvouchers:dimen/m3_comp_list_list_item_selected_hover_state_la
 com.example.digitalvouchers:style/Widget.Material3.LoadingIndicator = 0x7f1204cb
 com.example.digitalvouchers:drawable/common_google_signin_btn_icon_dark = 0x7f07008f
 com.example.digitalvouchers:dimen/mtrl_navigation_rail_elevation = 0x7f06040f
+<<<<<<< HEAD
 com.example.digitalvouchers:style/Widget.Material3.Toolbar.Button.Navigation = 0x7f12052b
 com.example.digitalvouchers:style/Widget.MaterialComponents.TimePicker = 0x7f1205db
 com.example.digitalvouchers:id/dialogGif = 0x7f0900bc
+=======
+com.example.digitalvouchers:id/dialogGif = 0x7f0900bc
+com.example.digitalvouchers:styleable/MaterialAutoCompleteTextView = 0x7f130058
+>>>>>>> ce1db1c85c1a6c4f8c49a70d6be59cc36e7b13a0
 com.example.digitalvouchers:attr/queryHint = 0x7f03041e
 com.example.digitalvouchers:style/RtlOverlay.Widget.AppCompat.Search.DropDown = 0x7f12016b
 com.example.digitalvouchers:style/Base.TextAppearance.AppCompat.Widget.ActionBar.Title = 0x7f120035
 com.example.digitalvouchers:style/Base.Widget.MaterialComponents.Slider = 0x7f120127
 com.example.digitalvouchers:style/ThemeOverlay.Material3.Button.TextButton = 0x7f12036f
+<<<<<<< HEAD
 com.example.digitalvouchers:styleable/MaterialAutoCompleteTextView = 0x7f130058
+=======
+>>>>>>> ce1db1c85c1a6c4f8c49a70d6be59cc36e7b13a0
 com.example.digitalvouchers:style/Widget.Material3.Button.ElevatedButton = 0x7f120463
 com.example.digitalvouchers:string/mtrl_picker_cancel = 0x7f110094
 com.example.digitalvouchers:style/ThemeOverlay.Material3.Button.ElevatedButton = 0x7f12036b
@@ -1024,6 +1063,11 @@ com.example.digitalvouchers:dimen/m3_comp_suggestion_chip_flat_container_elevati
 com.example.digitalvouchers:style/Base.V21.ThemeOverlay.Material3.BottomSheetDialog = 0x7f1200b2
 com.example.digitalvouchers:style/Base.ThemeOverlay.Material3.SideSheetDialog = 0x7f12008a
 com.example.digitalvouchers:style/TextAppearance.AppCompat.Widget.PopupMenu.Large = 0x7f120228
+<<<<<<< HEAD
+=======
+com.example.digitalvouchers:style/Widget.MaterialComponents.TimePicker = 0x7f1205db
+com.example.digitalvouchers:style/Widget.Material3.Toolbar.Button.Navigation = 0x7f12052b
+>>>>>>> ce1db1c85c1a6c4f8c49a70d6be59cc36e7b13a0
 com.example.digitalvouchers:styleable/MaterialButton = 0x7f130059
 com.example.digitalvouchers:attr/itemShapeAppearance = 0x7f0302b3
 com.example.digitalvouchers:string/common_google_play_services_install_title = 0x7f110039
@@ -1589,6 +1633,13 @@ com.example.digitalvouchers:style/Theme.Material3Expressive.DayNight.Dialog.MinW
 com.example.digitalvouchers:dimen/m3_sys_motion_easing_legacy_accelerate_control_y2 = 0x7f060310
 com.example.digitalvouchers:id/open_search_view_root = 0x7f09019d
 com.example.digitalvouchers:style/ThemeOverlay.Material3Expressive.MaterialButtonGroup.Overflow = 0x7f1203c7
+<<<<<<< HEAD
+=======
+com.example.digitalvouchers:dimen/m3_card_elevated_elevation = 0x7f0600ee
+com.example.digitalvouchers:dimen/m3_large_text_vertical_offset_adjustment = 0x7f0602b1
+com.example.digitalvouchers:style/Theme.Material3.Dark.NoActionBar = 0x7f1202b9
+com.example.digitalvouchers:macro/m3_comp_radio_button_unselected_icon_color = 0x7f0d0185
+>>>>>>> ce1db1c85c1a6c4f8c49a70d6be59cc36e7b13a0
 com.example.digitalvouchers:style/Theme.MaterialComponents.Dialog.Alert.Bridge = 0x7f12032c
 com.example.digitalvouchers:macro/m3_comp_radio_button_unselected_icon_color = 0x7f0d0185
 com.example.digitalvouchers:dimen/m3_card_elevated_elevation = 0x7f0600ee
